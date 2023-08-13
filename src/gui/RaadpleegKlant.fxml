@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="naamKlantLbl2" layoutX="77.0" layoutY="94.0" text="Naam klant">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TableView id="barcodeTable" fx:id="bestellingTbl" layoutX="2.0" layoutY="491.0" prefHeight="147.0" prefWidth="600.0">
+        <columns>
+          <TableColumn id="karaktersCol" fx:id="idCol" prefWidth="149.60004425048828" text="Orderid" />
+          <TableColumn id="cijfersCol" fx:id="datumCol" prefWidth="134.39996337890625" text="Datum" />
+            <TableColumn id="prefixCol" fx:id="statusCol" prefWidth="183.99996948242188" text="Status" />
+        </columns>
+      </TableView>
+      <Label fx:id="bold" layoutX="2.0" layoutY="140.0" text="Naam:" />
+      <Label fx:id="bold" layoutX="2.0" layoutY="160.0" text="Email:" />
+      <Label id="lblStatus" fx:id="naamKlantLbl" layoutX="41.0" layoutY="139.0" text="Naam" />
+      <Label id="lblStatus" fx:id="emailLbl" layoutX="42.0" layoutY="160.0" text="Email" />
+      <TableView fx:id="tblAankopers" layoutX="2.0" layoutY="267.0" prefHeight="166.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="naamCol" prefWidth="254.3999695777893" text="Naam" />
+          <TableColumn fx:id="emailCol" prefWidth="264.8001403808594" text="Email" />
+        </columns>
+      </TableView>
+      <Label fx:id="bold" layoutX="2.0" layoutY="181.0" text="Adres:" />
+      <ImageView fx:id="imgLogo" fitHeight="45.0" fitWidth="46.0" layoutX="19.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Deactivate.png" />
+         </image>
+      </ImageView>
+      <Label id="lblStatus" fx:id="adresLbl" layoutX="42.0" layoutY="181.0" text="Adres" />
+      <Label fx:id="bold" layoutX="279.0" layoutY="140.0" text="Telefoon:" />
+      <Label id="lblStatus" fx:id="telefoonnrLbl" layoutX="330.0" layoutY="139.0" text="telefoonnr" />
+      <Label layoutX="7.0" layoutY="461.0" text="Bestellingen">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="237.0" text="Aankopers">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      
+   </children>
+</Pane>

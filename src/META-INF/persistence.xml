@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <persistence-unit name="schoolproject" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>domein.Aankoper</class>
+    <class>domein.BedrijfsBestelling</class>
+    <class>domein.BedrijfsDoos</class>
+    <class>domein.BedrijfsKlant</class>    
+    <class>domein.BedrijfsUser</class>
+    <class>domein.Barcode</class>
+    <class>domein.StatusEntity</class>
+     <class>domein.BedrijfsTransportdienst</class>
+     <class>domein.BedrijfsProduct</class>
+     <class>domein.BedrijfsProductBestelling</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://vichogent.be:40058/SDP2DBG05?serverTimezone=UTC"/>
+      <property name="javax.persistence.jdbc.user" value="SDP2G05"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="UAsxkgeoT8UoB+I9XX1tyQ=="/>
+      <!-- <property name="javax.persistence.schema-generation.database.action" value="create"/> -->
+    </properties>
+  </persistence-unit>
+</persistence>

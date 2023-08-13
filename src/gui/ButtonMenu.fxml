@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1500.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle fx:id="navbar" arcHeight="5.0" arcWidth="5.0" fill="#e2473e" height="106.0" layoutX="-16.0" layoutY="-12.0" scaleX="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1516.0" />
+      <AnchorPane fx:id="leftPane" layoutX="186.0" layoutY="94.0" prefHeight="904.0" prefWidth="536.0">
+         <children>
+            <ImageView fitHeight="82.0" fitWidth="84.0" layoutX="130.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="DetailPane" layoutX="804.0" layoutY="95.0" prefHeight="904.0" prefWidth="600.0" />
+      <ImageView fitHeight="61.0" fitWidth="243.0" layoutX="29.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Logo_delaware_FullColor_whitetext_digital.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="34.0" layoutY="185.0" prefHeight="550.0" prefWidth="135.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnBestelling" mnemonicParsing="false" onAction="#maakRaadpleegBestellingen" prefHeight="200.0" prefWidth="171.0">
+               <graphic>
+                  <VBox fx:id="vboxcenter" prefHeight="115.0" prefWidth="123.0">
+                     <children>
+                        <ImageView fx:id="imgBestelling" fitHeight="45.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/logosIcons/rooddoos.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblButton1" text="Bestellingen" />
+                     </children>
+                  </VBox>
+               </graphic></Button>
+            <Button fx:id="btnKlant" mnemonicParsing="false" onAction="#maakRaadpleegKlanten" prefHeight="200.0" prefWidth="245.0">
+               <graphic>
+                  <VBox fx:id="vboxcenter" prefHeight="132.0" prefWidth="107.0">
+                     <children>
+                        <ImageView fx:id="imgKlant" fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/logosIcons/roodklant.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblButton2" text="Klanten" />
+                     </children>
+                  </VBox>
+               </graphic></Button>
+            <Button fx:id="btnTransportdienst" mnemonicParsing="false" onAction="#maakRaadpleegTransportdiensten" prefHeight="200.0" prefWidth="190.0">
+               <graphic>
+                  <VBox fx:id="vboxcenter" prefHeight="125.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="imgTransport" fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/logosIcons/roodtruck.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblButton3" text="Transportdiensten" />
+                     </children>
+                  </VBox>
+               </graphic></Button>
+            <Button fx:id="btnDoos" layoutX="10.0" layoutY="294.0" mnemonicParsing="false" onAction="#maakRaadpleegDozen" prefHeight="200.0" prefWidth="190.0">
+               <graphic>
+                  <VBox fx:id="vboxcenter" prefHeight="125.0" prefWidth="120.0">
+                     <children>
+                        <ImageView fx:id="imgDoos" fitHeight="45.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/logosIcons/roodtruck.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblButton4" prefHeight="14.0" prefWidth="32.0" text="Dozen" />
+                     </children>
+                  </VBox>
+               </graphic>
+            </Button>
+            <Button fx:id="btnRegistreer" mnemonicParsing="false" onAction="#maakRaadpleegUsers" prefHeight="200.0" prefWidth="190.0">
+               <graphic>
+                  <VBox fx:id="vboxcenter" prefHeight="125.0" prefWidth="120.0">
+                     <children>
+                        <ImageView fx:id="imgRegistreer" fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/logosIcons/roodtruck.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="lblButton5" prefHeight="14.0" prefWidth="122.0" text="Registreer Magazijnier" />
+                     </children>
+                  </VBox>
+               </graphic>
+            </Button>
+         </children>
+      </VBox>
+      <Label fx:id="welkomLbl" layoutX="1215.0" layoutY="31.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+      </Label>
+   </children>
+</Pane>

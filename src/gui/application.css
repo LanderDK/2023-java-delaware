@@ -1,0 +1,133 @@
+.root{
+	-fx-font-family: "Calibri";
+	-fx-background-color: "white";
+}	
+
+.button{
+	-fx-background-color: #EF463B;
+	-fx-text-fill: "white";
+	-fx-border-radius: 0;
+}
+
+.combo-box{
+		-fx-background-color: "#ffffff";
+		-fx-border-radius:0;
+	-fx-border-color: #EF463B;
+	-fx-border-image-width: 3px;
+}
+
+.text-input{
+	-fx-border-radius:0;
+	-fx-border-color: #EF463B;
+	-fx-border-image-width: 3px;
+}
+#welkomLbl{
+	-fx-alignment: top-left ;
+}
+
+#bold{
+	-fx-font-weight: bold;
+}
+
+#lblTitle{
+	-fx-font-size: 30px;
+	-fx-font-weight: bold;
+}
+
+
+
+#lblStuk{
+	-fx-font-size: 12px;
+}
+
+#btnTerug{
+	-fx-background-color: transparent;
+	-fx-text-fill: "black";
+	-fx-font-weight: bold;
+	-fx-font-size: 24px;
+}
+
+#btnBestelling, #btnKlant,#btnTransportdienst, #btnDoos, #btnRegistreer{
+	-fx-border-radius: 0;
+	-fx-background-color: "white";
+	-fx-text-fill: #EF463B;
+	-fx-border-width: 3px;
+	-fx-border-color: #EF463B;
+}
+#btnBestelling:hover, #btnKlant:hover,#btnTransportdienst:hover, #btnDoos:hover ,#btnRegistreer:hover{
+	-fx-background-color: #EF463B;
+	-fx-text-fill: "white";
+}
+#vboxcenter{
+	-fx-alignment: center 
+}
+#lblButton1, #lblButton2, #lblButton3, #lblButton4, #lblButton5{
+	-fx-text-fill: #EF463B;
+}
+#navbar{
+	-fx-min-width: 100%;
+}
+
+
+.table-column {
+    -fx-alignment: CENTER;
+}
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #EF463B;
+    -fx-padding: 0 0 5px 0;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-alignment: "center";
+   
+}
+.table-view .column-header .label{
+   	-fx-text-fill: "white" ;   
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+.table-row-cell:hover {
+    -fx-text-background-color: #EF463B;
+}
+.table-row-cell:selected:hover {
+       -fx-background-color: #EF463B;
+    -fx-text-background-color: "black";
+}
+
+.table-row-cell:odd{
+    -fx-background-color: #E9E9E9;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:odd:selected {
+    -fx-background-color: #8c8c8c;
+       -fx-text-background-color: "black";
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+.table-row-cell:even:selected {
+    -fx-background-color: #8c8c8c;
+       -fx-text-background-color: "black";
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+.table-row-cell:even{
+    -fx-background-color: #ffffff;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
